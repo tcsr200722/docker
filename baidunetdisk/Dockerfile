@@ -8,7 +8,7 @@ COPY root /
 COPY startapp.sh /startapp.sh
 
 RUN apt-get update  \
-&&  apt-get install -y wget libnss3 libxss1 desktop-file-utils libasound2-dev ttf-wqy-zenhei libgtk-3-0 libnotify4 xdg-utils libsecret-common libsecret-1-0 libindicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libappindicator3-1   \
+&&  apt-get install -y wget libnss3 libxss1 desktop-file-utils libasound2-dev ttf-wqy-zenhei libgtk-3-0 libgbm1 libnotify4 xdg-utils libsecret-common libsecret-1-0 libindicator3-7 libdbusmenu-glib4 libdbusmenu-gtk3-4 libappindicator3-1   \
 &&  wget http://wppkg.baidupcs.com/issue/netdisk/Linuxguanjia/3.3.2/baidunetdisk_3.3.2_amd64.deb  \
 &&  dpkg -i  baidunetdisk_3.3.2_amd64.deb   \
 &&  rm  baidunetdisk_3.3.2_amd64.deb   \ 
