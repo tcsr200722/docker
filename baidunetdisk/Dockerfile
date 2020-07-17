@@ -1,4 +1,4 @@
-FROM jlesage/baseimage-gui:debian-10 
+FROM jlesage/baseimage-gui:debian-9
 
 ENV APP_NAME="Baidunetdisk"
 ENV DISPLAY_WIDTH="1000"
